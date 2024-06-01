@@ -1,0 +1,43 @@
+button{
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+h1{
+    text-align:center;
+    font-family: Arial;
+}
+
+button:hover{
+    background-color:#efefef;
+}
+
+select{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+button>img{
+    width:25px;
+}
+
+#application{
+    display:flex;
+    justify-content: center;
+}
+
+#palette{
+    display:flex;
+    flex-direction:column;
+    align-items:start;
+}
+
+#palette-geo, #palette-texte, #palette-couleur, #palette-position, #delete{
+    display:flex;
+    margin:10px;
+}
+
+#palette-bordure{
+    margin:10px;
+}
