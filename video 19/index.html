@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apprendre Fabric JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Notre application pour faire du dessin avec Fabric.JS</h1>
+    <div id="application">
+        <canvas width="750" height="430" style="box-shadow:rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px" id="c"></canvas>
+        <div id="palette">
+            <div id="palette-geo">
+                <button id="addTriangle"><img src="images/triangle.png"></button>
+                <button id="addRectangle"><img src="images/rectangle.png"></button>
+                <button id="addCircle"><img src="images/cercle.png"></button>
+            </div>
+            <div id="palette-texte">
+                <button id="addText"><img src="images/texte.png"></button>
+                <button id="changeToBold"><img src="images/bold.png"></button>
+                <button id="underline">souligné</button>
+                <button id="italic">italic</button>
+                <input id="fontSize" type="number" value="0">
+                <select id="police">
+                    <option val="Arial">Arial</option>
+                    <option val="Georgia">Georgia</option>
+                    <option val="Times New Roman">Times New Roman</option>
+                </select>
+                <input id="monTexte">
+            </div>
+            <div id="palette-couleur">
+                <input type="color" id="color">
+                <select id="type-of-color">
+                    <option val="fill">fill</option>
+                    <option val="backgroundColor">backgroundColor</option>
+                </select>
+            </div>
+    
+            <div id="palette-position">
+                <button id="sendBackwards"><img src="images/sendBackwards.png"></button>
+                <button id="bringForward"><img src="images/bringForward.png"></button>
+                <button id="sendToBack"><img src="images/sendToBack.png"></button>
+                <button id="bringToFront"><img src="images/bringToFront.png"></button>
+            </div>
+
+            <div id="palette-group">
+                <button id="group">grouper</button>
+                <button id="degroup">dégrouper</button>
+            </div>
+
+            <div id="palette-bordure">
+                <p>Bordure</p>
+                <input type="color" id="colorBorder">
+                <input type="number" id="sizeBorder">
+            </div>
+
+            <input type="file" id="addImage" />
+    
+            <button id="delete"><img src="images/corbeille.png"></button>
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="fabric.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
